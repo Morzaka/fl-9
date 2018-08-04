@@ -1,5 +1,24 @@
-/* 
+@media print {
 
-write your code here
+    .tm-sidebar, #about, .heading, .blocks, #ideas, .img-fluid, #contact{
+        display: none;
+    }
 
-*/
+    #home ,.pad{
+        margin-left: -360px;
+        padding-left: -30px;
+    }
+
+    h2.tm-section-title {
+        color: blue;
+        width: auto;
+    }
+
+    .flex-2-col {
+        display: block;
+    }
+
+    .tm-content-box {
+        margin-bottom: -28px;
+    }
+}
