@@ -7,6 +7,12 @@
     #home ,.pad{
         margin-left: -360px;
         padding-left: -30px;
+        padding-bottom: -50px;
+    }
+
+    .tm-banner {
+        height: 270px;
+        padding: 30px;
     }
 
     h2.tm-section-title {
@@ -15,10 +21,27 @@
     }
 
     .flex-2-col {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .tm-content-box {
-        margin-bottom: -28px;
+        margin-bottom: -29px;
+    }
+    .pad {
+        padding: -50px;
+    }
+
+    .tm-team-description-container {
+        max-width: 1000px;
+    }
+    .flex-item {
+        max-width: 1000px;
+        align-items: center;
+    }
+    img {
+        vertical-align: center;
     }
 }
