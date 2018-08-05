@@ -4,44 +4,37 @@
         display: none;
     }
 
-    #home ,.pad{
-        margin-left: -360px;
-        padding-left: -30px;
-        padding-bottom: -50px;
-    }
-
     .tm-banner {
         height: 270px;
-        padding: 30px;
+    }
+
+    .tm-content-box {
+        margin-bottom: -30px;
+        margin-left: -360px;
+    }
+
+    .pad {
+        padding: 30px 45px 0 45px;
     }
 
     h2.tm-section-title {
         color: blue;
-        width: auto;
     }
 
     .flex-2-col {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
-    .tm-content-box {
-        margin-bottom: -29px;
-    }
-    .pad {
-        padding: -50px;
-    }
-
-    .tm-team-description-container {
-        max-width: 1000px;
-    }
     .flex-item {
-        max-width: 1000px;
-        align-items: center;
+        max-width: 2000px;
     }
-    img {
-        vertical-align: center;
+
+    p {
+        font-weight: normal;
+    }
+
+    .tm-footer {
+        padding-top: 50px;
+        margin-left: -360px;
     }
 }
