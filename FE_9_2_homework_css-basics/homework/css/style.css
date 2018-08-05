@@ -113,7 +113,44 @@
     }
 
     .blocks img, .blocks p, .blocks p::first-letter{
-        border-radius: 0px;
+        border-radius: 0;
         color: #8b8690;
     }
+
+    nav li:not(:last-child){
+        border-bottom: 2px dotted;
+        border-color: #C0C0C0;
+    }
+
+    input {
+        color: #ff0000 !important;
+    }
+
+    input::-webkit-input-placeholder:after {
+        content: " *";
+        color: red;
+    }
+
+    input:-moz-placeholder:after {
+        content: " *";
+        color: red;
+    }
+
+    div.mandatory-field:after {
+        content: "*";
+        color: red;
+        vertical-align: top;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    button[type="submit"] {
+        color: #ff0000;
+    }
+
+    button[type="submit"]:hover {
+        color: #ffffff;
+        background-color: #52b3d4;
+    }
+
 }
