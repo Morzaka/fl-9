@@ -50,4 +50,13 @@
         font-weight: 700;
         background-color: #52b3d4;
     }
+
+    p::first-letter {
+        font-size: 30px;
+        color: #76cdd7;
+    }
+
+    .tm-content-box, .tm-sidebar {
+        box-shadow: 0 0 20px 2px #929292;
+    }
 }
