@@ -30,11 +30,24 @@
     }
 
     p {
-        font-weight: normal;
+        font-weight: 400;
     }
 
     .tm-footer {
         padding-top: 50px;
         margin-left: -360px;
+    }
+}
+
+@media screen, speech {
+
+    .box img {
+        border-radius: 50%;
+    }
+
+    h2.tm-box-bg-title:hover {
+        color: #ffffff;
+        font-weight: 700;
+        background-color: #52b3d4;
     }
 }
