@@ -1,6 +1,6 @@
 @media print {
 
-    .tm-sidebar, #about, .heading, .blocks, #ideas, .img-fluid, #contact{
+    .tm-sidebar, #about, .heading, .blocks, #ideas, .img-fluid, #contact {
         display: none;
     }
 
@@ -79,45 +79,45 @@
         letter-spacing: 5px;
     }
 
-    h2+p {
+    h2 + p {
         font-style: italic;
     }
 
-    p{
+    p {
         line-height: 1.5em;
     }
 
-     ol a:visited {
+    ol a:visited {
         color: #C0C0C0;
     }
 
-     ol a:hover {
-         color: #52b3d4;
-         border-bottom: 1px double;
-     }
+    ol a:hover {
+        color: #52b3d4;
+        border-bottom: 1px double;
+    }
 
-     a.text:after {
-         content: "New";
-         color: red;
-         vertical-align: super;
-         font-size: x-small;
-     }
+    a.text:after {
+        content: "New";
+        color: red;
+        vertical-align: super;
+        font-size: x-small;
+    }
 
-     .heading h2 {
-         text-align: center;
-         color: #52b3d4;
-     }
+    .heading h2 {
+        text-align: center;
+        color: #52b3d4;
+    }
 
-    .blocks li:nth-child(2n+1){
+    .blocks li:nth-child(2n+1) {
         background-color: #f2f2f2;
     }
 
-    .blocks img, .blocks p, .blocks p::first-letter{
+    .blocks img, .blocks p, .blocks p::first-letter {
         border-radius: 0;
         color: #8b8690;
     }
 
-    nav li:not(:last-child){
+    nav li:not(:last-child) {
         border-bottom: 2px dotted;
         border-color: #C0C0C0;
     }
