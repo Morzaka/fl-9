@@ -71,6 +71,49 @@
     }
 
     .tm-banner {
-        padding-top: 0px;
+        padding-top: 0;
+    }
+
+    .carousel-inner > .carousel-item h2 {
+        color: #dcdcdc;
+        letter-spacing: 5px;
+    }
+
+    h2+p {
+        font-style: italic;
+    }
+
+    p{
+        line-height: 1.5em;
+    }
+
+     ol a:visited {
+        color: #C0C0C0;
+    }
+
+     ol a:hover {
+         color: #52b3d4;
+         border-bottom: 1px double;
+     }
+
+     a.text:after {
+         content: "New";
+         color: red;
+         vertical-align: super;
+         font-size: x-small;
+     }
+
+     .heading h2 {
+         text-align: center;
+         color: #52b3d4;
+     }
+
+    .blocks li:nth-child(2n+1){
+        background-color: #f2f2f2;
+    }
+
+    .blocks img, .blocks p, .blocks p::first-letter{
+        border-radius: 0px;
+        color: #8b8690;
     }
 }
