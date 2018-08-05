@@ -58,12 +58,12 @@
 
     .tm-content-box, .tm-sidebar {
         box-shadow: 0 0 20px 2px #929292;
+        widows: 1;
     }
 
     #home:before, section:before {
         content: "";
         display: inline-block;
-        widows: 1;
         height: 0;
         border-color: #52b3d4 transparent transparent transparent;
         border-style: solid;
