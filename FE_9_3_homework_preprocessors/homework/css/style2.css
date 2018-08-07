@@ -1,27 +1,22 @@
-@import "_variables1.scss";
-@import "_variables2.scss";
-
 body {
   display: block;
   width: 960px;
   margin: auto;
-  background-color: $contentBackground;
-  ing: 5px 20px 10px 20px;
-  .main-wrapper{
+  background-color: #660;
+  ing: 5px 20px 10px 20px; }
+  body .main-wrapper {
     display: contents;
     width: auto;
-    white-space: nowrap;
-    header {
+    white-space: nowrap; }
+    body .main-wrapper header {
       height: 250px;
       margin: 5px;
-      display: inline-block; width: 50%; white-space: normal;
-    }
-  }
-  img {
+      display: inline-block;
+      width: 50%;
+      white-space: normal; }
+  body img {
     width: 400px;
-    height: 450px;
-  }
-}
+    height: 450px; }
 
 input[type="text"],
 input[type="password"],
@@ -34,5 +29,4 @@ textarea {
   box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
-  padding: 2px;
-}
+  padding: 2px; }
