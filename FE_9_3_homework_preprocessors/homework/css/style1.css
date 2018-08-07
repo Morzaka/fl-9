@@ -4,21 +4,17 @@ body {
   background-color: #FFF;
   padding-left: 20px; }
   body .main-wrapper {
-    width: 960px;
-    background-size: 100% auto; }
+    width: 960px; }
     body .main-wrapper header {
       display: block;
-      height: 250px;
-      margin: 5px;
-      white-space: nowrap; }
+      margin-bottom: 100px; }
       body .main-wrapper header div {
-        display: inline-block;
-        width: 20%;
-        white-space: normal; }
+        display: block;
+        flex: 1 0 0;
+        height: 240px; }
       body .main-wrapper header nav {
-        display: inline-block;
-        width: 80%;
-        white-space: normal; }
+        flex: 2 0 0;
+        float: left; }
   body img {
     width: 460px;
     height: 450px; }

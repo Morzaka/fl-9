@@ -28,20 +28,19 @@ body {
   .main-wrapper{
     //display: contents;
     width: 960px;
-    background-size: 100% auto;
     header {
       display: block;
-      height: 250px;
-      margin: 5px;
-      white-space: nowrap;
+      margin-bottom: 100px;
       div {
-        display: inline-block; width: 20%; white-space: normal;
+        display: block;
+        flex: 1 0 0;
+        height: 240px;
       }
       nav {
-        display: inline-block; width: 80%; white-space: normal;
+        flex: 2 0 0;
+        float: left;
       }
     }
-
   }
   img {
     width: 460px;
