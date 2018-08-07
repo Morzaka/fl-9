@@ -1,32 +1,24 @@
 body {
-  display: block;
   width: 960px;
   margin: auto;
-  background-color: #660;
-  ing: 5px 20px 10px 20px; }
+  background-color: #FFF;
+  padding-left: 20px; }
   body .main-wrapper {
-    display: contents;
-    width: auto;
-    white-space: nowrap; }
+    width: 960px;
+    background-size: 100% auto; }
     body .main-wrapper header {
+      display: block;
       height: 250px;
       margin: 5px;
-      display: inline-block;
-      width: 50%;
-      white-space: normal; }
+      white-space: nowrap; }
+      body .main-wrapper header div {
+        display: inline-block;
+        width: 20%;
+        white-space: normal; }
+      body .main-wrapper header nav {
+        display: inline-block;
+        width: 80%;
+        white-space: normal; }
   body img {
-    width: 400px;
+    width: 460px;
     height: 450px; }
-
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="url"],
-input[type="number"],
-textarea {
-  background: #f9f9f9;
-  border: 1px solid #ccc;
-  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
-  padding: 2px; }
