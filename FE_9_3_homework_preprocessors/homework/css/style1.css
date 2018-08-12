@@ -1,20 +1,15 @@
 body {
   width: 960px;
-  margin: auto;
-  background-color: #FFF;
-  padding-left: 20px; }
-  body .main-wrapper {
-    width: 960px; }
-    body .main-wrapper header {
-      display: block;
-      margin-bottom: 100px; }
-      body .main-wrapper header div {
-        display: block;
-        flex: 1 0 0;
-        height: 240px; }
-      body .main-wrapper header nav {
-        flex: 2 0 0;
-        float: left; }
-  body img {
-    width: 460px;
-    height: 450px; }
+  margin: 0 auto;
+  background: #FFF;
+}
+body .main-wrapper .logo {
+  display: inline-block;
+  border: 1px solid red;
+  margin: 10px;
+}
+body .main-wrapper nav {
+  display: inline-block;
+  border: 1px solid red;
+  margin: 10px;
+}
