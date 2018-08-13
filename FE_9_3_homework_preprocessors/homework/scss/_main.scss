@@ -1,5 +1,5 @@
-@import "_variables1.scss";
-//@import "_variables2.scss";
+//@import "_variables1.scss";
+@import "_variables2.scss";
 
 @font-face {
   font-family: 'Roboto', sans-serif;
@@ -9,7 +9,15 @@
 @mixin placeholder {
   color: $mainColorUsed;
   font-weight: bold;
-  font-size: 18px;
+  font-size: $mainFontSize;
+}
+
+@mixin brigtHeader {
+  text-align: right;
+  color: $mainColorUsed;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-bottom: -15px;
 }
 
 .main-wrapper {
@@ -28,8 +36,8 @@
     }
     nav {
       display: inline-block;
-      border-top: 1px solid $backgroundAndLines;
-      border-bottom: 1px solid $backgroundAndLines;
+      border-top: 1px solid $cardColorText;
+      border-bottom: 1px solid $cardColorText;
       max-width: $maximumWidth;
       height: 60px;
       align-self: flex-end;
@@ -57,7 +65,7 @@
       padding: 6px 14px;
       margin-bottom: 20px;
       margin-top: 20px;
-      font-size: 18px;
+      font-size: $mainFontSize;
       &:focus {
         border: 2px solid $mainColorUsed;
         outline: none;
@@ -89,27 +97,94 @@
       div {
         margin: 0 20px;
         .post-description {
-          color: #139ca7;
+          color: $cardColorTitle;
           margin-left: 3px;
           font-size: x-small;
           margin-bottom: -10px;
         }
         h3 {
-          border-top: 2px solid #73999d;
+          border-top: 2px solid $cardColorText;
           padding-top: 10px;
           text-transform: uppercase;
-          color: #139ca7;
+          color: $cardColorTitle;
         }
         p {
           margin-top: -10px;
-          color : #73999d;
+          color: $cardColorText;
         }
       }
     }
-    img{
+    img {
       display: block;
       margin: 13px auto;
       width: 430px;
     }
+  }
+  .about {
+    max-width: inherit;
+    margin: 50px 7px 5px 7px;
+    h1 {
+      @include brigtHeader;
+    }
+    p {
+      color: $cardColorText;
+      line-height: 1.6;
+      text-align: left;
+    }
+    img {
+      max-width: $maximumWidth;
+      margin-bottom: 30px;
+    }
+  }
+  .contact-form {
+    h1 {
+      @include brigtHeader;
+    }
+    h4 {
+      @include brigtHeader;
+    }
+    .send-form {
+      margin-top: 30px;
+      .form-typing {
+        width: $maximumWidth - 4;
+        height: 40px;
+        margin-bottom: 15px;
+        padding: 6px 14px;
+        font-size: $mainFontSize;
+        &::placeholder{
+          font-size: $mainFontSize;
+        }
+        border: 2px solid $cardColorText;
+        &:focus {
+          border: 2px solid $mainColorUsed;
+          outline: none;
+        }
+      }
+      #contact_message {
+        height: 80px;
+      }
+      button{
+        float: right;
+        width: 200px;
+        height: 40px;
+        margin-bottom: 10px;
+        background: $mainColorUsed;
+        text-transform: uppercase;
+        color: $contentBackground;
+        font-size: small;
+        &:active {
+          background: $backgroundAndLines;
+          color: $cardColorTitle;
+        }
+        &:focus {
+          border: 2px solid $mainColorUsed;
+          outline: none;
+        }
+      }
+    }
+  }
+  footer {
+    margin-top: 40px;
+    color: $cardColorText
   }
 }

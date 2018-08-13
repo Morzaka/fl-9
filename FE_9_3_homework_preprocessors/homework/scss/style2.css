@@ -5,7 +5,7 @@
   font-family: "Roboto", sans-serif;
   width: 960px;
   margin: auto;
-  background: #FFF; }
+  background: #efefef; }
   .main-wrapper header {
     display: flex;
     justify-content: space-between; }
@@ -15,14 +15,14 @@
         max-width: 400px; }
     .main-wrapper header nav {
       display: inline-block;
-      border-top: 1px solid #efefef;
-      border-bottom: 1px solid #efefef;
+      border-top: 1px solid #73999d;
+      border-bottom: 1px solid #73999d;
       max-width: 100%;
       height: 60px;
       align-self: flex-end;
       margin-bottom: 40px; }
       .main-wrapper header nav a {
-        color: #3cc6e1;
+        color: #ff3f18;
         margin: 0 58px 0 58px;
         position: relative;
         top: 40%;
@@ -30,34 +30,34 @@
         text-decoration: none;
         text-transform: uppercase; }
         .main-wrapper header nav a:hover {
-          color: #efefef; }
+          color: #ffffff; }
   .main-wrapper .toolbar {
     width: 100%; }
     .main-wrapper .toolbar input {
       margin-left: 695px;
       height: 30px;
-      border: 2px solid #3cc6e1;
+      border: 2px solid #ff3f18;
       padding: 6px 14px;
       margin-bottom: 20px;
       margin-top: 20px;
       font-size: 18px; }
       .main-wrapper .toolbar input:focus {
-        border: 2px solid #3cc6e1;
+        border: 2px solid #ff3f18;
         outline: none; }
       .main-wrapper .toolbar input::-webkit-input-placeholder {
-        color: #3cc6e1;
+        color: #ff3f18;
         font-weight: bold;
         font-size: 18px; }
       .main-wrapper .toolbar input::-moz-placeholder {
-        color: #3cc6e1;
+        color: #ff3f18;
         font-weight: bold;
         font-size: 18px; }
       .main-wrapper .toolbar input:-ms-input-placeholder {
-        color: #3cc6e1;
+        color: #ff3f18;
         font-weight: bold;
         font-size: 18px; }
       .main-wrapper .toolbar input:-moz-placeholder {
-        color: #3cc6e1;
+        color: #ff3f18;
         font-weight: bold;
         font-size: 18px; }
   .main-wrapper .post-list {
@@ -68,12 +68,12 @@
     align-content: center; }
     .main-wrapper .post-list article {
       width: 460px;
-      background: #efefef;
+      background: #ffffff;
       margin-bottom: 20px; }
       .main-wrapper .post-list article div {
         margin: 0 20px; }
         .main-wrapper .post-list article div .post-description {
-          color: #139ca7;
+          color: #73999d;
           margin-left: 3px;
           font-size: x-small;
           margin-bottom: -10px; }
@@ -81,7 +81,7 @@
           border-top: 2px solid #73999d;
           padding-top: 10px;
           text-transform: uppercase;
-          color: #139ca7; }
+          color: #73999d; }
         .main-wrapper .post-list article div p {
           margin-top: -10px;
           color: #73999d; }
@@ -89,5 +89,67 @@
       display: block;
       margin: 13px auto;
       width: 430px; }
+  .main-wrapper .about {
+    max-width: inherit;
+    margin: 50px 7px 5px 7px; }
+    .main-wrapper .about h1 {
+      text-align: right;
+      color: #ff3f18;
+      font-weight: bolder;
+      text-transform: uppercase;
+      margin-bottom: -15px; }
+    .main-wrapper .about p {
+      color: #73999d;
+      line-height: 1.6;
+      text-align: left; }
+    .main-wrapper .about img {
+      max-width: 100%;
+      margin-bottom: 30px; }
+  .main-wrapper .contact-form h1 {
+    text-align: right;
+    color: #ff3f18;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: -15px; }
+  .main-wrapper .contact-form h4 {
+    text-align: right;
+    color: #ff3f18;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: -15px; }
+  .main-wrapper .contact-form .send-form {
+    margin-top: 30px; }
+    .main-wrapper .contact-form .send-form .form-typing {
+      width: 96%;
+      height: 40px;
+      margin-bottom: 15px;
+      padding: 6px 14px;
+      font-size: 18px;
+      border: 2px solid #73999d; }
+      .main-wrapper .contact-form .send-form .form-typing::placeholder {
+        font-size: 18px; }
+      .main-wrapper .contact-form .send-form .form-typing:focus {
+        border: 2px solid #ff3f18;
+        outline: none; }
+    .main-wrapper .contact-form .send-form #contact_message {
+      height: 80px; }
+    .main-wrapper .contact-form .send-form button {
+      float: right;
+      width: 200px;
+      height: 40px;
+      margin-bottom: 10px;
+      background: #ff3f18;
+      text-transform: uppercase;
+      color: #efefef;
+      font-size: small; }
+      .main-wrapper .contact-form .send-form button:active {
+        background: #ffffff;
+        color: #73999d; }
+      .main-wrapper .contact-form .send-form button:focus {
+        border: 2px solid #ff3f18;
+        outline: none; }
+  .main-wrapper footer {
+    margin-top: 40px;
+    color: #73999d; }
 
 /*# sourceMappingURL=style2.css.map */
