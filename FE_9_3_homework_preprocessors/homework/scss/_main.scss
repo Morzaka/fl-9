@@ -1,22 +1,113 @@
 @import "_variables1.scss";
 //@import "_variables2.scss";
 
-body {
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Roboto");
+}
+
+@mixin placeholder {
+  color: $mainColorUsed;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.main-wrapper {
+  font-family: $fontsRobo;
   width: 960px;
-  margin: 0 auto;
+  margin: auto;
   background: $contentBackground;
-  .main-wrapper {
+  header {
+    display: flex;
+    justify-content: space-between;
     .logo {
       display: inline-block;
-      border: 1px solid red;
-      margin:10px;
+      img {
+        max-width: 400px;
+      }
     }
     nav {
       display: inline-block;
-      border: 1px solid red;
-      margin:10px;
-
+      border-top: 1px solid $backgroundAndLines;
+      border-bottom: 1px solid $backgroundAndLines;
+      max-width: $maximumWidth;
+      height: 60px;
+      align-self: flex-end;
+      margin-bottom: 40px;
+      a {
+        color: $mainColorUsed;
+        margin: 0 58px 0 58px;
+        position: relative;
+        top: ($maximumWidth - 20)/2;
+        font-size: 18px;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover {
+          color: $backgroundAndLines;
+        }
+      }
     }
-
+  }
+  .toolbar {
+    width: $maximumWidth;
+    input {
+      margin-left: 695px;
+      height: 30px;
+      border: 2px solid $mainColorUsed;
+      padding: 6px 14px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      font-size: 18px;
+      &:focus {
+        border: 2px solid $mainColorUsed;
+        outline: none;
+      }
+      &::-webkit-input-placeholder {
+        @include placeholder;
+      }
+      &::-moz-placeholder {
+        @include placeholder;
+      }
+      &:-ms-input-placeholder {
+        @include placeholder;
+      }
+      &:-moz-placeholder {
+        @include placeholder;
+      }
+    }
+  }
+  .post-list {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-content: center;
+    article {
+      width: 460px;
+      background: $backgroundAndLines;
+      margin-bottom: 20px;
+      div {
+        margin: 0 20px;
+        .post-description {
+          color: #139ca7;
+          margin-bottom: -10px;
+        }
+        h3 {
+          border-top: 2px solid #73999d;
+          padding-top: 10px;
+          text-transform: uppercase;
+          color: #139ca7;
+        }
+        p {
+          margin-top: -10px;
+          color : #73999d;
+        }
+      }
+    }
+    img{
+      display: block;
+      margin: 13px auto;
+      width: 430px;
+    }
   }
 }
