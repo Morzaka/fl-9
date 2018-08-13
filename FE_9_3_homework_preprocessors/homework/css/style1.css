@@ -92,6 +92,8 @@
 }
 .main-wrapper .post-list article div .post-description {
   color: #139ca7;
+  margin-left: 3px;
+  font-size: x-small;
   margin-bottom: -10px;
 }
 .main-wrapper .post-list article div h3 {
