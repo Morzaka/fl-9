@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="881133a5-22a1-4083-a8be-5e499b5d03df" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FE_9_3_homework_preprocessors/homework/css/style1.css" beforeDir="false" afterPath="$PROJECT_DIR$/FE_9_3_homework_preprocessors/homework/css/style1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FE_9_3_homework_preprocessors/homework/css/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/FE_9_3_homework_preprocessors/homework/css/style2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FE_9_3_homework_preprocessors/homework/scss/_main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/FE_9_3_homework_preprocessors/homework/scss/_main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FE_9_3_homework_preprocessors/homework/scss/style1.css" beforeDir="false" afterPath="$PROJECT_DIR$/FE_9_3_homework_preprocessors/homework/scss/style1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FE_9_3_homework_preprocessors/homework/scss/style1.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/FE_9_3_homework_preprocessors/homework/scss/style1.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FE_9_3_homework_preprocessors/homework/scss/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/FE_9_3_homework_preprocessors/homework/scss/style2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FE_9_3_homework_preprocessors/homework/scss/style2.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/FE_9_3_homework_preprocessors/homework/scss/style2.css.map" afterDir="false" />
-    </list>
+    <list default="true" id="881133a5-22a1-4083-a8be-5e499b5d03df" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -24,8 +15,8 @@
     <session id="-1749207602">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="22" />
-          <entry key="project.open.time.0" value="7" />
+          <entry key="project.closed" value="23" />
+          <entry key="project.open.time.0" value="8" />
           <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="3" />
@@ -37,7 +28,7 @@
           <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -165,7 +156,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,6 +167,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -234,11 +225,12 @@
       <workItem from="1534257012555" duration="3834000" />
       <workItem from="1534268492625" duration="104000" />
       <workItem from="1534325655603" duration="69000" />
+      <workItem from="1534337761749" duration="337000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96437000" />
+    <option name="totallyTimeSpent" value="96774000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -252,7 +244,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1920" height="1082" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24670532" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24670532" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -264,7 +256,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3289689" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32987013" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.46526316" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
