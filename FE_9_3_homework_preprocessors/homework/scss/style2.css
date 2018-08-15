@@ -5,7 +5,7 @@
   font-family: "Roboto", sans-serif;
   width: 960px;
   margin: auto;
-  background: #efefef; }
+  background: #FFF; }
   .main-wrapper header {
     display: flex;
     justify-content: space-between; }
@@ -22,7 +22,7 @@
       align-self: flex-end;
       margin-bottom: 40px; }
       .main-wrapper header nav a {
-        color: #ff3f18;
+        color: #00bcd4;
         margin: 0 58px 0 58px;
         position: relative;
         top: 40%;
@@ -30,34 +30,34 @@
         text-decoration: none;
         text-transform: uppercase; }
         .main-wrapper header nav a:hover {
-          color: #ffffff; }
+          color: #efefef; }
   .main-wrapper .toolbar {
     width: 100%; }
     .main-wrapper .toolbar input {
       margin-left: 695px;
       height: 30px;
-      border: 2px solid #ff3f18;
+      border: 2px solid #00bcd4;
       padding: 6px 14px;
       margin-bottom: 20px;
       margin-top: 20px;
       font-size: 18px; }
       .main-wrapper .toolbar input:focus {
-        border: 2px solid #ff3f18;
+        border: 2px solid #00bcd4;
         outline: none; }
       .main-wrapper .toolbar input::-webkit-input-placeholder {
-        color: #ff3f18;
+        color: #00bcd4;
         font-weight: bold;
         font-size: 18px; }
       .main-wrapper .toolbar input::-moz-placeholder {
-        color: #ff3f18;
+        color: #00bcd4;
         font-weight: bold;
         font-size: 18px; }
       .main-wrapper .toolbar input:-ms-input-placeholder {
-        color: #ff3f18;
+        color: #00bcd4;
         font-weight: bold;
         font-size: 18px; }
       .main-wrapper .toolbar input:-moz-placeholder {
-        color: #ff3f18;
+        color: #00bcd4;
         font-weight: bold;
         font-size: 18px; }
   .main-wrapper .post-list {
@@ -68,12 +68,12 @@
     align-content: center; }
     .main-wrapper .post-list article {
       width: 460px;
-      background: #ffffff;
+      background: #efefef;
       margin-bottom: 20px; }
       .main-wrapper .post-list article div {
         margin: 0 20px; }
         .main-wrapper .post-list article div .post-description {
-          color: #73999d;
+          color: #139ca7;
           margin-left: 3px;
           font-size: x-small;
           margin-bottom: -10px; }
@@ -81,7 +81,7 @@
           border-top: 2px solid #73999d;
           padding-top: 10px;
           text-transform: uppercase;
-          color: #73999d; }
+          color: #139ca7; }
         .main-wrapper .post-list article div p {
           margin-top: -10px;
           color: #73999d; }
@@ -94,7 +94,7 @@
     margin: 50px 7px 5px 7px; }
     .main-wrapper .about h1 {
       text-align: right;
-      color: #ff3f18;
+      color: #00bcd4;
       font-weight: bolder;
       text-transform: uppercase;
       margin-bottom: -15px; }
@@ -107,13 +107,13 @@
       margin-bottom: 30px; }
   .main-wrapper .contact-form h1 {
     text-align: right;
-    color: #ff3f18;
+    color: #00bcd4;
     font-weight: bolder;
     text-transform: uppercase;
     margin-bottom: -15px; }
   .main-wrapper .contact-form h4 {
     text-align: right;
-    color: #ff3f18;
+    color: #00bcd4;
     font-weight: bolder;
     text-transform: uppercase;
     margin-bottom: -15px; }
@@ -129,7 +129,7 @@
       .main-wrapper .contact-form .send-form .form-typing::placeholder {
         font-size: 18px; }
       .main-wrapper .contact-form .send-form .form-typing:focus {
-        border: 2px solid #ff3f18;
+        border: 2px solid #00bcd4;
         outline: none; }
     .main-wrapper .contact-form .send-form #contact_message {
       height: 80px; }
@@ -138,15 +138,15 @@
       width: 200px;
       height: 40px;
       margin-bottom: 10px;
-      background: #ff3f18;
+      background: #00bcd4;
       text-transform: uppercase;
-      color: #efefef;
+      color: #FFF;
       font-size: small; }
       .main-wrapper .contact-form .send-form button:active {
-        background: #ffffff;
-        color: #73999d; }
+        background: #efefef;
+        color: #139ca7; }
       .main-wrapper .contact-form .send-form button:focus {
-        border: 2px solid #ff3f18;
+        border: 2px solid #00bcd4;
         outline: none; }
   .main-wrapper footer {
     margin-top: 40px;
