@@ -5,10 +5,11 @@ calcBtn.addEventListener('click', priceCalculation);
 
 function getInputData(promptMessage, promptPlaceholder, alertMessage, indicator) {
   let inputNum = prompt(promptMessage, promptPlaceholder);
-  if ((isNaN(+inputNum)) || (inputNum < 0) || (parseInt(inputNum, 10) === 0) || +inputNum > indicator) {
+  while (((isNaN(+inputNum)) || (inputNum < 0) || (parseInt(inputNum, 10) === 0) || +inputNum > indicator)) {
     alert(alertMessage);
-    getInputData();
-  } else if (inputNum === null) {
+    inputNum = prompt(promptMessage, promptPlaceholder);
+  }
+  if (inputNum === null) {
   } else {
     return inputNum;
   }
