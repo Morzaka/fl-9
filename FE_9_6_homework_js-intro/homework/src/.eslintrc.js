@@ -40,4 +40,4 @@ module.exports = {
         "no-useless-constructor": "error",
         "no-var": "warn"
     }
-}
+};
