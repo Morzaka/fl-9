@@ -8,27 +8,29 @@ const alertAmount = `Please, enter a valid amount. It should be NUMBER greater t
 const promptDiscount = `Please enter your discount in percentage from 1 to 100`;
 const alertDiscount = `Please, use only NUMBER in range from 1 to 100!`;
 
-function getInputData(promptMessage, promptPlaceholder, alertMessage, indicator) {
-  let inputNum = prompt(promptMessage, promptPlaceholder);
-  while ((isNaN(+inputNum)) || (inputNum < 0) || (parseInt(inputNum, 10) === 0) ||
-  (inputNum.length === 0) || (+inputNum > indicator)) {
+function getInputData(promptMessage, alertMessage, indicator) {
+  let inputNum = prompt(promptMessage);
+  while (isNaN(+inputNum) || inputNum < 0 || parseInt(inputNum, 10) === 0 || inputNum.length === 0
+  || +inputNum > indicator) {
     alert(alertMessage);
-    inputNum = prompt(promptMessage, promptPlaceholder);
+    inputNum = prompt(promptMessage);
   }
-  if (inputNum === null) {
-  } else {
-    return inputNum;
-  }
+  return inputNum;
+}
+
+function round(num) {
+  return parseInt(num * 100) / 100;
 }
 
 function priceCalculation() {
-  let amount = getInputData(promptAmount, 4950, alertAmount, Infinity);
-  let discount = getInputData(promptDiscount, 30, alertDiscount, 100);
-  let saved = (amount * discount) / 100;
+  let amount = getInputData(promptAmount, alertAmount, Infinity);
+  let discount = getInputData(promptDiscount, alertDiscount, 100);
+  let saved = amount * discount / 100;
+  let withDiscount = amount - saved;
   console.log(
-    `Price without discount: ${parseInt(amount * 100) / 100}
+    `Price without discount: ${round(amount)}
 \nDiscount: ${discount}
-\nPrice with discount: ${parseInt((amount - saved) * 100) / 100}
-\nSaved: ${parseInt(saved * 100) / 100}`
+\nPrice with discount: ${round(withDiscount)}
+\nSaved: ${round(saved)}`
   );
 }
