@@ -1,9 +1,9 @@
 `use strict`;
 
-let login;
-let password;
+let login = null;
+let password = null;
 
-do {
+for (;login !== `User`;) {
   login = prompt(`Please enter your login:`);
   if (!login) {
     alert(`Canceled`);
@@ -18,10 +18,10 @@ do {
   if (login !== `User`) {
     alert(`I don't know you.`);
   }
-} while (login !== `User`);
+}
 
 if (login) {
-  do {
+  for (;password !== `SuperUser`;) {
     password = prompt(`Please enter your password:`);
     if (!password) {
       alert(`Canceled`);
@@ -30,7 +30,7 @@ if (login) {
     if (password !== `SuperUser`) {
       alert(`Wrong password`);
     }
-  } while (password !== `SuperUser`);
+  }
 }
 
 if (password) {
