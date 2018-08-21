@@ -15,7 +15,6 @@ if (!startGame) {
 
     while (startGame && attempts > 0) {
       let randomNumber = Math.round(Math.random() * max);
-      console.log(randomNumber);
 
       let userNumber = prompt(
         `Enter a number from 0 to ${max} :
