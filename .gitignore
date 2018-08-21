@@ -1,1 +1,17 @@
 /.idea
+
+# Common desktop formats
+*.xls
+*.XLS
+*.xlsx
+*.XLSX
+*.pdf
+*.PDF
+*.doc
+*.DOC
+*.docx
+*.DOCX
+*.odt
+*.ODT
+*.ods
+*.ODS
