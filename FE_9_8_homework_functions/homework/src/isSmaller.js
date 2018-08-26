@@ -1,5 +1,5 @@
 `use strict`;
 
-const isSmaller = (arg1, arg2) => {
-  return !isBigger(arg1, arg2);
+const isSmaller = (a, b) => {
+  return a < b;
 };

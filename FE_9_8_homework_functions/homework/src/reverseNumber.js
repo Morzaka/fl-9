@@ -9,5 +9,3 @@ function reverseNumber (someNum) {
   reversNum = reversNum[reversNum.length + minusOne] === '-' ? '-' + reversNum.slice(0, minusOne) : reversNum;
   return +reversNum;
 }
-
-console.log(reverseNumber(1000));
