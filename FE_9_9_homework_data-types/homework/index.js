@@ -12,22 +12,46 @@ function forEach(array, func) {
 
 function map(array, func) {
   let newArr = [];
-  forEach(array, function (el) {
-    newArr.push(func(el))
-  });
+  forEach(array, (el) => newArr.push(func(el)));
   return newArr;
 }
 
 function filter(array, func) {
   let newArr = [];
-  forEach(array, function (el) {
+  forEach(array, (el) => {
     if (func(el)) {
-      newArr.push(func(el))
+      newArr.push(el)
     }
   });
   return newArr;
 }
 
+function getAdultAppleLovers(data) {
+  let arrNeeded = filter(data, el => el.age > 18 && el.favoriteFruit === 'apple');
+  return map(arrNeeded, el => el.name);
+}
 
-console.log(filter([2, 5, 8], function(el) { return el > 3 }));
-//console.log(findType(null)); // returns “object”
+function keys(obj) {
+  let arrayOfKeys = [];
+  for (let key in obj) {
+    if (key) {
+      arrayOfKeys.push(key);
+    }
+  }
+  return arrayOfKeys;
+}
+
+function values(obj) {
+  let arrayOfValues = [];
+  for (let key in obj) {
+    if (key) {
+      arrayOfValues.push(obj[key])
+    }
+  }
+  return arrayOfValues;
+}
+
+function showFormattedDate(dateObj) {
+  let locale = 'en-us';
+  return `It is ${dateObj.getDate()} of ${dateObj.toLocaleString(locale, {month: 'short'})}, ${dateObj.getFullYear()}`;
+}
