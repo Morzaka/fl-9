@@ -27,8 +27,8 @@ function filter(array, func) {
 }
 
 function getAdultAppleLovers(data) {
-  let arrNeeded = filter(data, el => el.age > 18 && el.favoriteFruit === 'apple');
-  return map(arrNeeded, el => el.name);
+  let newArr = filter(data, el => el.age > 18 && el.favoriteFruit === 'apple');
+  return map(newArr, el => el.name);
 }
 
 function keys(obj) {
