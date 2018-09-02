@@ -56,11 +56,11 @@ function userCard(someIndex) {
 
   function trackHistory(type, credits) {
     let nowTime = new Date();
-    let dd = nowTime.getDate() > dateTen ? nowTime.getDate() : '0' + nowTime.getDate();
-    let mm = nowTime.getMonth() + 1 > dateTen ? nowTime.getMonth() + 1 : '0' + (nowTime.getMonth() + 1);
-    let hh = nowTime.getHours() > dateTen ? nowTime.getHours() : '0' + nowTime.getHours();
-    let mi = nowTime.getMinutes() > dateTen ? nowTime.getMinutes() : '0' + nowTime.getMinutes();
-    let sc = nowTime.getSeconds() > dateTen ? nowTime.getSeconds() : '0' + nowTime.getSeconds();
+    let dd = nowTime.getDate() < dateTen ? '0' + nowTime.getDate() : nowTime.getDate();
+    let mm = nowTime.getMonth() + 1 < dateTen ? '0' + (nowTime.getMonth() + 1) : nowTime.getMonth() + 1;
+    let hh = nowTime.getHours() < dateTen ? '0' + nowTime.getHours() : nowTime.getHours();
+    let mi = nowTime.getMinutes() < dateTen ? '0' + nowTime.getMinutes() : nowTime.getMinutes();
+    let sc = nowTime.getSeconds() < dateTen ? '0' + nowTime.getSeconds() : nowTime.getSeconds();
     options.historyLogs.push({
       operationType: type,
       credits: credits,
