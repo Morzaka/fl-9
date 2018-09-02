@@ -1,77 +1,75 @@
-function userCard(passIndex) {
-  var monthArray = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
-  var balance = 100;
-  var transactionLimit = 100;
-  var historyLogs = [];
-  var maxNum = 3;
-  if (passIndex > maxNum || passIndex < 1) {
+'use strict';
+
+const message = 'Sory, transaction limit and remaining balance are less than credits you want to take. ' +
+  'Transaction aborted!';
+
+function userCard(someIndex) {
+
+  const someCard = {};
+  const maxNum = 3;
+  const taxes = 0.005;
+  const dateTen = 10;
+
+  let options = {
+    balance: 100,
+    transactionLimit: 100,
+    historyLogs: [],
+    key: null
+  };
+
+  if(someIndex < 1 || someIndex > maxNum) {
     return console.log('Available number  from 1 to 3');
   }
-  var key = passIndex;
-  return {
-    getCardOptions: function () {
-      return {
-        balance: balance,
-        transactionLimit: transactionLimit,
-        historyLogs: historyLogs,
-        key: key
-      }
+  options.key = someIndex;
 
-    },
-    putCredits: function (amount) {
-      var datePutCredits = new Date();
-      balance += amount;
-      historyLogs.push({
-        operationType: 'Received credits',
-        credits: amount,
-        operationTime: datePutCredits.getDate() + '/' + monthArray[datePutCredits.getMonth()] + '/'
-          + datePutCredits.getFullYear() + ', ' + datePutCredits.getHours() + ':'
-          + datePutCredits.getMinutes() + ':' + datePutCredits.getSeconds()
-      });
-    },
-    takeCredits: function (amount) {
-      var dateTakeCredits = new Date();
-      if (amount < balance && amount < transactionLimit) {
-        balance -= amount;
-        historyLogs.push({
-          operationType: 'Withdrawal of credits',
-          credits: amount,
-          operationTime: dateTakeCredits.getDate() + '/' + monthArray[dateTakeCredits.getMonth()] + '/'
-            + dateTakeCredits.getFullYear() + ', ' + dateTakeCredits.getHours() + ':'
-            + dateTakeCredits.getMinutes() + ':' + dateTakeCredits.getSeconds()
-        });
-      } else {
-        console.log('Balance or transaction limit is lowest than credit!');
-      }
+  someCard.getCardOptions = () => options;
 
-    },
-    setTransactionLimit: function (amount) {
-      var dateTranactionLimit = new Date();
-      transactionLimit = amount;
-      historyLogs.push({
-        operationType: 'Transaction limit change',
-        credits: amount,
-        operationTime: dateTranactionLimit.getDate() + '/' + monthArray[dateTranactionLimit.getMonth()] + '/'
-          + dateTranactionLimit.getFullYear() + ', ' + dateTranactionLimit.getHours() + ':'
-          + dateTranactionLimit.getMinutes() + ':' + dateTranactionLimit.getSeconds()
-      });
-    },
-    transferCredits: function (amount, recepient) {
-      var tax = 0.5;
-      var assitedValue = 100;
-      var taxValue = amount * tax / assitedValue;
-      if (amount < balance && amount < transactionLimit) {
-        recepient.putCredits(amount - taxValue);
-        balance -= amount;
-      } else {
-        console.log('Balance or transaction limit is lowest than credit!');
-      }
+  someCard.putCredits = amount => {
+    trackHistory('Received of credits', amount);
+    options.balance += amount;
+  };
 
+  someCard.takeCredits = amount => {
+    if (options.transactionLimit > amount && options.balance > amount) {
+      trackHistory('Withdrawal of credits', amount);
+      options.balance -= amount;
+    } else {
+      console.log(message)
     }
+  };
+
+  someCard.setTransactionLimit = limit => {
+    trackHistory('Transaction limit change', limit);
+    options.transactionLimit = limit;
+  };
+
+  someCard.transferCredits = (amount, cardNo) => {
+    let withTaxes = amount + amount * taxes;
+    if (options.transactionLimit > withTaxes && options.balance > withTaxes) {
+      trackHistory('Withdrawal of credits', withTaxes);
+      cardNo.putCredits(withTaxes);
+      options.balance -= withTaxes;
+    } else {
+      console.log(message)
+    }
+  };
+
+  function trackHistory(type, credits) {
+    let nowTime = new Date();
+    let dd = nowTime.getDate() > dateTen ? nowTime.getDate() : '0' + nowTime.getDate();
+    let mm = nowTime.getMonth() + 1 > dateTen ? nowTime.getMonth() + 1 : '0' + (nowTime.getMonth() + 1);
+    let hh = nowTime.getHours() > dateTen ? nowTime.getHours() : '0' + nowTime.getHours();
+    let mi = nowTime.getMinutes() > dateTen ? nowTime.getMinutes() : '0' + nowTime.getMinutes();
+    let sc = nowTime.getSeconds() > dateTen ? nowTime.getSeconds() : '0' + nowTime.getSeconds();
+    options.historyLogs.push({
+      operationType: type,
+      credits: credits,
+      operationTime: `${dd}/${mm}/${nowTime.getFullYear()}, ${hh}:${mi}:${sc}`
+    })
   }
 
+  return someCard;
 }
-
 
 class UserAccount {
 
@@ -81,16 +79,15 @@ class UserAccount {
   }
 
   addCard() {
-    const len = 3;
-    if (UserAccount.count <= len) {
+    const maxQuantity = 3;
+    if(UserAccount.count <= maxQuantity) {
       this.cards.push(userCard(UserAccount.count));
       UserAccount.count++;
     }
   }
 
   getCardByKey(key) {
-    let modKey = key - 1;
-    return this.cards[modKey];
+    return this.cards[key-1]
   }
 
 }
