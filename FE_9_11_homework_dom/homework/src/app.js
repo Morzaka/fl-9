@@ -30,19 +30,19 @@ function removeItem() {
 
 function completeItem() {
   let item = this;
-  item = item.innerHTML = checkBoxYes;
+  item.innerHTML = checkBoxYes;
 }
 
 function addItemTodo(text) {
   let list = document.getElementById('todo');
   let item = document.createElement('li');
   item.innerText = text;
+  document.getElementById('item').value = '';
   listItemCounter++;
   if (listItemCounter === maxListItem) {
     document.getElementById('item').disabled = true;
     document.getElementById('add').disabled = true;
     message.style.display = 'block';
-
   }
 
   let remove = document.createElement('button');

@@ -31,6 +31,7 @@ header {
     margin: 10px;
     text-align: center;
 }
+
 hr {
     width: 96%;
     display: flex;
@@ -43,14 +44,16 @@ hr {
 }
 
 div input {
-    width: 93%;
+    width: 90%;
     height: 22px;
+    font-size: 20px;
 }
 
-ul{
+ul {
     list-style: none;
 }
-div.add_section  {
+
+div.add_section {
     display: flex;
     border: 0;
     background: none;
@@ -63,15 +66,18 @@ div.add_section  {
 }
 
 img.cat_paw {
-    height: 50px;
+    height: 70px;
     width: 50px;
+    padding-bottom: 20px;
 }
-footer{
+
+footer {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     flex: 1;
 }
+
 ul li {
     display: flex;
     position: relative
@@ -102,12 +108,14 @@ button.remove {
 }
 
 #add {
+    max-height: 20px;
     width: 10%;
     border: 0;
     background: #fff;
     cursor: pointer;
     margin-top: -3px;
 }
+
 ul.todo {
     width: 100%;
 }
@@ -115,10 +123,12 @@ ul.todo {
 ul.todo li {
     position: relative;
     width: 100%;
-    margin-bottom: 10px;
     margin-left: 40px;
+    padding-top: 5px;
+    font-size: 16px;
 }
+
 #maxSizeWarning {
-    display:none;
+    display: none;
 }
 
