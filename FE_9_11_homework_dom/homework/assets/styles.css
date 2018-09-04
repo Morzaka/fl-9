@@ -1,2 +1,124 @@
-/* Your styles goes here */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.app {
+    display: flex;
+    width: 500px;
+    min-height: 350px;
+    border: black 1px solid;
+    flex-direction: column;
+}
+
+header {
+    margin: 10px;
+    text-align: center;
+}
+hr {
+    width: 96%;
+    display: flex;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #000;
+    margin-bottom: 10px;
+    flex-direction: column;
+    margin-left: 2%;
+}
+
+div input {
+    width: 93%;
+    height: 22px;
+}
+
+ul{
+    list-style: none;
+}
+div.add_section  {
+    display: flex;
+    border: 0;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+img.cat_paw {
+    height: 50px;
+    width: 50px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 1;
+}
+ul li {
+    display: flex;
+    position: relative
+}
+
+button {
+    border: 0;
+    background: none;
+}
+
+button.complete {
+    position: absolute;
+    top: 0;
+    left: -25px;
+}
+
+button.remove {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#del {
+    float: right;
+    margin-right: 60px;
+    cursor: pointer;
+
+}
+
+#add {
+    width: 10%;
+    border: 0;
+    background: #fff;
+    cursor: pointer;
+    margin-top: -3px;
+}
+ul.todo {
+    width: 100%;
+}
+
+ul.todo li {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+#maxSizeWarning {
+    display:none;
+}
 

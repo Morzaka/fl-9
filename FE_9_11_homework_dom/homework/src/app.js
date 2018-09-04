@@ -1,38 +1,62 @@
-var rootNode = document.getElementById('root');
+let listItemCounter = 0;
+let maxListItem = 10;
+let firstNumberOfList = 10;
+const message = document.querySelector('.par');
 
-let header = document.createElement('div');
-let heading = document.createElement('h1');
-let inputField = document.createElement('input');
-let addButton = document.createElement('div');
+let deleteIcon = '<i class="material-icons" id="del">delete</i>';
+let checkBoxNo = '<i class="material-icons" id="checkBoxNo">check_box_outline_blank </i>';
+let checkBoxYes = '<i class="material-icons" id="checkBoxYes">check_box </i>';
 
-header.className = 'header';
-heading.innerText = 'TODO Cat List';
+document.getElementById('add').addEventListener('click', function () {
+  let value = document.getElementById('item').value;
+  if (value) {
+    addItemTodo(value);
+  }
+});
 
-inputField.className = 'input-todo';
-inputField.placeholder = 'Add New Action';
 
-addButton.className = 'addItemButton';
-addButton.innerHTML = '<i class="material-icons">add_box</i>';
+function removeItem() {
+  let item = this.parentNode;
+  let parent = item.parentNode;
+  listItemCounter--;
+  if (listItemCounter <= maxListItem) {
+    document.getElementById('item').disabled = false;
+    document.getElementById('add').disabled = false;
+    message.style.display = 'none';
+  }
 
-header.appendChild(inputField);
-header.appendChild(addButton);
-header.appendChild(document.createElement('hr'));
-
-let main = document.createElement('div');
-
-main.innerHTML = createItem();
-
-function createItem() {
-  let listItem = document.createElement('li');
-  listItem.className = 'listItem';
-  const unchecked = '<i class="material-icons">check_box_outline_box</i>';
-  const bin = '<i class="material-icons">delete</i>';
-
-  return `${unchecked} Some todo text ${bin}`;
+  parent.removeChild(item);
 }
 
-let container = document.createElement('div');
-container.appendChild(header);
-container.appendChild(main);
+function completeItem() {
+  let item = this;
+  item = item.innerHTML = checkBoxYes;
+}
 
-rootNode.appendChild(container);
+function addItemTodo(text) {
+  let list = document.getElementById('todo');
+  let item = document.createElement('li');
+  item.innerText = text;
+  listItemCounter++;
+  if (listItemCounter === maxListItem) {
+    document.getElementById('item').disabled = true;
+    document.getElementById('add').disabled = true;
+    message.style.display = 'block';
+
+  }
+
+  let remove = document.createElement('button');
+  remove.classList.add('remove');
+  remove.innerHTML = deleteIcon;
+  remove.addEventListener('click', removeItem);
+
+  let complete = document.createElement('button');
+  complete.classList.add('complete');
+  complete.innerHTML = checkBoxNo;
+  complete.addEventListener('click', completeItem);
+
+  item.appendChild(complete);
+  item.appendChild(remove);
+
+  list.insertBefore(item, list.childNodes[firstNumberOfList]);
+}

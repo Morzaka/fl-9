@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Homework 11 - TODO Cat List</title>
-  <link rel="stylesheet" href="./assets/material-icons/material-icons.css">
-  <link rel="stylesheet" href="./assets/styles.css">
-</head>
-<body>
-  <div id="root"></div>
 
-  <script src="./src/app.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 11 - TODO Cat List</title>
+    <link rel="stylesheet" href="./assets/material-icons/material-icons.css">
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body>
+<div id="root" class="wrapper">
+    <div class="app">
+        <header class="app_header">
+            <div class="app_title"><h2 class="app_title_text">TODO Cat List</h2>
+                <p id="maxSizeWarning" class="par">Maximum item per list are created’ is displayed</p>
+            </div>
+        </header>
+        <div class="add_section">
+            <input type="text" placeholder="Add New Action" id="item">
+            <button class="addBtn" id="add">
+                <i class="material-icons">add_box</i>
+            </button>
+        </div>
+        <hr id="hr">
+        <div class="container">
+            <ul class="todo" id="todo">
+            </ul>
+
+            <ul class="todo" id="complete">
+            </ul>
+        </div>
+        <footer class="app_footer">
+            <img class="cat_paw" src="assets/img/cat.png" alt="Paw">
+        </footer>
+    </div>
+</div>
+<script src="./src/app.js"></script>
 </body>
+
 </html>
