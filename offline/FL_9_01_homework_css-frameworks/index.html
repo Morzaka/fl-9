@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,11 +13,69 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <!-- Less link -->
-    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <link rel="stylesheet" href="styles/styles.less">
 </head>
+
 <body>
+<div class="container-fluid">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" height="20" width="23"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-id"
+                    aria-controls="navbar-id" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-<h1>Hello, world!</h1>
-
+            <div class="collapse navbar-collapse" id="navbar-id">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-5">
+        <hr>
+        <h1 class="border-bottom border-primary text-primary">Yoga Pilates</h1>
+        <div class="row">
+            <div class="col-12">
+                <p>Something here!</p>
+                <hr/>
+                <p>This list!</p>
+            </div>
+        </div>
+        <article>
+            <!--If your web page contains a blog post or news article it makes sense to wrap the whole article in article tags-->
+            <aside>
+                <!--The aside tag can be used within an article or outside of it. It is used to mark content that is related but not central to the main content of the page-->
+            </aside>
+            <section>
+                <!--Sections are used to seperate major parts of an element, such as chapters of an HTML ebook, or to cordone off the comments section from the rest of the main element-->
+            </section>
+            <address>
+                <!--An address element inside of an article element is used to provide contact info for the author of the article-->
+            </address>
+        </article>
+        <aside> <!--The aside element would also be used to mark a sidebar if used outside of the main element-->
+            <section>
+                <!--Within a sidebar you could use section elements to identify the different parts of the sidebar. For example, you could put adds in one section, related posts in a second section, and a newsletter signup form in a third section element.--> </section>
+        </aside>
+    </main>
+    <footer>
+        <!--The footer typically contains links to things like About Us, Privacy Policy, Contact Us and so forth. It may also contain a nav, address, section, or aside element.-->
+        <address>
+            <!--Put an address element in the footer and you're indicating that the contact info within the element is for the owner of the website rather than the author of the article.--> </address>
+    </footer>
+</div>
 </body>
+
 </html>
